@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "IRANSansWeb";
+  src: url(./font/teqh_iransansweb.ttf);
+}
+
+body {
+  background-color: #ffffff;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  direction: rtl;
+  font-family: IRANSansWeb;
+
+}
+
+body > :first-child {
+  border: 0.5px solid #3645ff;
+  border-radius: 5px;
+  background-color: #f0f4fa;
+  min-height: 50vh;
+  min-width: 50vw;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 8px;
+  
+}
+
+.dir-ltr {
+  direction: ltr;
+}
+.dir-rtl {
+  direction: rtl;
+}
